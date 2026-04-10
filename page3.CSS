@@ -1,0 +1,71 @@
+*{
+    background-color:pink;
+
+}
+
+h1{
+    color:deeppink;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+    margin-top:150px;
+    
+}
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+
+#no{
+display:circle;
+    margin-left:300px;
+    margin-right:auto;
+    margin-top:20px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+}
+
+#yes{
+    display:circle;
+    margin-left:500px;
+    margin-right:auto;
+    margin-top:20px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+  
+
+}
+
+#no{
+display:circle;
+    margin-left:300px;
+    margin-right:auto;
+    margin-top:20px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+}
+
+#thanks{
+    display:circle;
+    margin-left:730px;
+    margin-right:auto;
+    margin-top:40px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+}

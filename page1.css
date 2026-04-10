@@ -1,0 +1,41 @@
+body {  background-color: #FFC0CB;}  
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: deeppink;
+  
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+}
+
+#yes{
+    display:circle;
+    margin-left:500px;
+    margin-right:auto;
+    margin-top:20px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+  
+
+}
+
+#no{
+display:circle;
+    margin-left:300px;
+    margin-right:auto;
+    margin-top:20px;
+    width : 100px;
+    height: 50px;
+    color:white;
+    background-color: deeppink;
+    border-color : white;
+}

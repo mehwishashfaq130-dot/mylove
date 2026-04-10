@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("imgpage5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative;
+}
+
+/* Container */
+.parchment-container {
+  position: relative;
+  width: 800px;
+  
+}
+
+/* Image */
+.parchment {
+  width: 700px;
+  height:400px;
+  display: block;
+
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Text */
+.letter-text {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+
+  color: #6b4423;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  line-height: 1.6;
+
+  opacity: 0;
+  transform: translateX(200px);
+
+  animation: slideInText 1.5s ease forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes slideInText {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rose {
+  position: absolute;
+  bottom: 180px;
+  right: 200px;
+
+  height: 280px;
+  width: auto;
+
+  opacity: 0;
+  transform: translateX(250px) rotate(-10deg);
+
+  animation: roseIn 1.1s ease forwards;
+  animation-delay: 2s;
+}
+
+@keyframes roseIn {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-10deg);
+  }
+}
+
+.findingher{
+  height:auto;
+  width:240px;
+  position:absolute;
+  margin-right:1200px;
+  margin-bottom:400px;
+  transform: rotate(-10deg);
+
+  opacity: 0;
+  transform: translateX(250px) rotate(-10deg);
+
+  animation: roseIn 1.1s ease forwards;
+  animation-delay: 3s;
+}
+
+@keyframes findingherIn {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-10deg);
+  }
+}
+
+.us {
+  width: 400px;
+  height: auto;
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  opacity: 0;
+
+  /* combine BOTH translate + rotate in ONE transform */
+  transform: translateX(250px) rotate(20deg);
+
+  animation: usIn 1.1s ease forwards;
+  animation-delay: 4s;
+}
+
+@keyframes usIn {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(20deg);
+  }
+}
+
+.us2{
+  height:auto;
+  width:180px;
+  position:absolute;
+  margin-right:700px;
+  margin-bottom:500px;
+  transform: rotate(-10deg);
+
+  opacity: 0;
+  transform: translateX(250px) rotate(-10deg);
+
+  animation: roseIn 1.1s ease forwards;
+  animation-delay: 5s;
+}
+
+@keyframes us2In {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-10deg);
+  }
+}
+
+.us3 {
+  width: 250px;
+  height: auto;
+
+  position: absolute;
+  top: 300px;
+  right: 200px;
+
+  opacity: 0;
+
+  /* combine BOTH translate + rotate in ONE transform */
+  transform: translateX(200px) rotate(5deg);
+
+  animation: usIn 1.1s ease forwards;
+  animation-delay: 6s;
+}
+
+@keyframes us3In {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(5deg);
+  }
+}
+
+.us6 {
+  height: auto;
+  width: 400px;
+  position: absolute;
+  margin-right: 1100px;
+  margin-top: 400px;
+
+  opacity: 0;
+  transform: translateX(0) rotate(-5deg);
+
+  animation: us6In 1.1s ease forwards; /* FIXED name */
+  animation-delay: 7s;
+}
+
+@keyframes us6In {
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-15deg); /* anticlockwise */
+  }
+}
