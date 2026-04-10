@@ -3,20 +3,16 @@ body {
   height: 100vh;
   overflow: hidden;
 
-  background-color: #f7d6df; /* fallback while bg loads */
+  /* KEEP YOUR ORIGINAL BACKGROUND */
+  background-image: url("images/imgpage5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-/* background appears after load */
-body.loaded {
-  background-image: url("images/imgpage5.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* Container */
@@ -35,7 +31,6 @@ body.loaded {
   opacity: 0;
   transform: scale(0.95);
   animation: fadeIn 1.2s ease forwards;
-  animation-play-state: paused;
 }
 
 @keyframes fadeIn {
@@ -62,7 +57,6 @@ body.loaded {
 
   animation: slideInText 1.2s ease forwards;
   animation-delay: 1s;
-  animation-play-state: paused;
 }
 
 @keyframes slideInText {
@@ -86,7 +80,6 @@ body.loaded {
 
   animation: roseIn 1s ease forwards;
   animation-delay: 1.8s;
-  animation-play-state: paused;
 }
 
 @keyframes roseIn {
@@ -96,16 +89,6 @@ body.loaded {
   }
 }
 
-/* Side images */
-.findingher,
-.us,
-.us2,
-.us3,
-.us6 {
-  opacity: 0;
-  animation-play-state: paused;
-}
-
 /* findingher */
 .findingher {
   height: auto;
@@ -113,6 +96,8 @@ body.loaded {
   position: absolute;
   margin-right: 1200px;
   margin-bottom: 400px;
+
+  opacity: 0;
   transform: translateX(150px) rotate(-10deg);
 
   animation: findingherIn 1s ease forwards;
@@ -134,6 +119,7 @@ body.loaded {
   top: 30px;
   right: 30px;
 
+  opacity: 0;
   transform: translateX(150px) rotate(20deg);
 
   animation: usIn 1s ease forwards;
@@ -154,6 +140,8 @@ body.loaded {
   position: absolute;
   margin-right: 700px;
   margin-bottom: 500px;
+
+  opacity: 0;
   transform: translateX(150px) rotate(-10deg);
 
   animation: us2In 1s ease forwards;
@@ -174,6 +162,8 @@ body.loaded {
   position: absolute;
   top: 300px;
   right: 200px;
+
+  opacity: 0;
   transform: translateX(150px) rotate(5deg);
 
   animation: us3In 1s ease forwards;
@@ -194,6 +184,8 @@ body.loaded {
   position: absolute;
   margin-right: 1100px;
   margin-top: 400px;
+
+  opacity: 0;
   transform: translateX(150px) rotate(-5deg);
 
   animation: us6In 1s ease forwards;
@@ -205,16 +197,4 @@ body.loaded {
     opacity: 1;
     transform: translateX(0) rotate(-15deg);
   }
-}
-
-/* start animations only after full load */
-body.loaded .parchment,
-body.loaded .letter-text,
-body.loaded .rose,
-body.loaded .findingher,
-body.loaded .us,
-body.loaded .us2,
-body.loaded .us3,
-body.loaded .us6 {
-  animation-play-state: running;
 }
