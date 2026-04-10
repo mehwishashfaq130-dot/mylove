@@ -3,8 +3,7 @@ body {
   height: 100vh;
   overflow: hidden;
 
-  /* KEEP YOUR ORIGINAL BACKGROUND */
-background-image: url("images/imgpage5.webp");
+  background-image: url("imgpage5.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +13,6 @@ background-image: url("images/imgpage5.webp");
   align-items: center;
   position: relative;
 }
-
 /* Container */
 .parchment-container {
   position: relative;
